@@ -1,0 +1,12 @@
+.custom-slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.custom-slider-title {
+  text-align: left;
+  color: var(--color-black);
+  font-size: 13px;
+  font-weight: 500;
+}

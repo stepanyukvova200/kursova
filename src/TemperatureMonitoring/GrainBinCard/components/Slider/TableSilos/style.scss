@@ -1,0 +1,191 @@
+.table-silos-main-hull {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  height: calc(100% - 52px);
+  max-height: calc(100% );
+  min-height: calc(100% );
+  border-radius: 16px;
+  background-color: var(--background-white);
+  padding: 24px;
+
+  .table-silos-container-group {
+    display: flex;
+    max-height: calc(100% - 38px);
+    height: calc(100% - 38px);
+    width: auto;
+
+    .simplebar-scrollbar::before {
+      display: none;
+    }
+
+    .simplebar-horizontal {
+      border-radius: 12px;
+      background: var(--color-stroke);
+      bottom: -16px;
+      height: 8px;
+
+      .simplebar-scrollbar {
+        pointer-events: auto;
+        background-color: var(--color-primary) !important;
+        border-radius: 12px;
+        height: 8px;
+        bottom: 8px;
+      }
+    }
+
+    .simplebar-vertical {
+      border-radius: 12px;
+      background: var(--color-stroke);
+      right: -16px;
+      width: 8px;
+
+      .simplebar-scrollbar {
+        pointer-events: auto;
+        background-color: var(--color-primary) !important;
+        border-radius: 12px;
+        width: 8px;
+        right: 8px;
+      }
+    }
+
+    .simplebar-content {
+      display: flex;
+      max-height: 100%;
+      height: 100%;
+      width: 100%;
+      flex-direction: row;
+      gap: 16px;
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+    .table-silos-container-info {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      height: auto;
+      width: auto;
+      border-radius: 16px;
+      max-width: none;
+
+      .table-silos-frames-container {
+        display: grid;
+        inline-size: max-content;
+        content-visibility: auto;
+        /* grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(11, 1fr); */
+        grid-auto-flow: column;
+        gap: 2px;
+        padding: 2px;
+
+        height: auto;
+        width: auto;
+        min-width: 200px;
+        border-radius: 12px;
+        background-color: var(--main-stroke);
+
+        .table-silos-header-frame {
+          display: flex;
+          min-height: 50px;
+          min-width: 100px;
+          background-color: var(--color-table-column);
+          color: var(--main-black);
+          text-align: center;
+          font-weight: bold;
+          padding: 8px;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .table-silos-header-column-frame {
+          display: flex;
+          min-height: 50px;
+          min-width: 100px;
+          background-color: var(--color-table-header);
+          color: var(--color-black);
+          text-align: center;
+          font-weight: bold;
+          padding: 8px;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .table-silos-frame {
+          display: flex;
+          min-height: 50px;
+          min-width: 100px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          background-color: var(--color-bg-light);
+          color: var(--main-white);
+
+          font-family: 'Inter', sans-serif;
+          font-size: 12px;
+          font-weight: 600;
+
+          &:active {
+            border: 4px solid var(--color-black);
+          }
+
+          &.normal {
+            background-color: #1f8f2b; /* Зелений */
+          }
+
+          &.warning {
+            background-color: #f8b400; /* Жовтий */
+          }
+
+          &.error {
+            background-color: #e03c3c; /* Червоний */
+          }
+
+          .table-silos-frame-contest {
+            font-size: 14px;
+            margin-bottom: 4px;
+          }
+
+          .table-silos-frame-temp {
+            font-size: 10px;
+            font-weight: 400;
+          }
+
+          /* Додаємо псевдоелемент */
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Щоб не заважав взаємодії */
+            visibility: hidden; /* Ховаємо його */
+          }
+        }
+      }
+    }
+  }
+
+  .table-silos-hull-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 24px;
+
+    .table-silos-contest {
+      display: flex;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--color-black);
+      margin: 0 auto;
+    }
+  }
+}

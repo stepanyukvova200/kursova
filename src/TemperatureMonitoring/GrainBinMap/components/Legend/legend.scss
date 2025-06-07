@@ -1,0 +1,57 @@
+@use '/src/colors' as *;
+
+.legend-container {
+  max-width: 1850px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 15px;
+  margin: auto;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.color-box {
+  width: 57px;
+  height: 15px;
+  border-radius: 8px;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 12px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.legend-title {
+  font-size: 14px;
+  // color: #333;
+  color: var(--color-black);
+}
+
+.grain-bin__swiper {
+  height: 60px;
+  padding-left: 60px !important;
+
+  .swiper-wrapper {
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

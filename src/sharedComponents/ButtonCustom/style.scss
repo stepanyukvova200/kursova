@@ -1,0 +1,49 @@
+.buttonCustom {
+  height: 40px;
+  text-align: center;
+  text-justify: auto;
+
+  &.filled {
+    border-radius: 12px;
+    background-color: var(--main-primary);
+    color: var(--main-white);
+
+    font-family: 'Inter-Regular', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: unset;
+
+    &:hover {
+      background-color: var(--color-secondary);
+      color: var(--main-white);
+    }
+
+    &:disabled {
+      background-color: var(--color-secondary-gray);
+      color: var(--main-white);
+    }
+  }
+
+  &.empty {
+    border-radius: 12px;
+    background-color: transparent;
+    border: 2px solid var(--color-secondary-button);
+    color: var(--color-secondary-button);
+
+    font-family: 'Inter-Regular', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: unset;
+
+    &:hover {
+      background-color: transparent;
+      border-color: var(--color-secondary-button-hover);
+      color: var(--color-secondary-button-hover);
+    }
+
+    &:disabled {
+      border-color: var(--color-secondary-gray);
+      color: var(--color-secondary-gray);
+    }
+  }
+}

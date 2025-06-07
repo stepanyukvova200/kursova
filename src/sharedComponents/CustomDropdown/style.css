@@ -1,0 +1,100 @@
+.custom-dropdow-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  max-height: 40px;
+  height: 100%;
+}
+
+.custom-dropdown-default {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  border: 1px solid var(--main-stroke);
+  border-radius: 12px;
+  background-color: var(--background-white);
+  padding: 0 12px;
+}
+
+.custom-dropdown-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--main-secondary-gray);
+}
+
+.custom-dropdown-title-active {
+  color: var(--color-black);
+}
+
+.custom-dropdown-option-item {
+  height: 32px;
+  border-bottom: 1px solid var(--main-secondary-gray);
+  background-color: var(--background-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--dropdown-option);
+  cursor: pointer;
+}
+
+.custom-dropdown-option-item-active {
+  background-color: var(--main-secondary);
+  color: var(--main-white);
+}
+
+.custom-dropdown-option-item:hover {
+  background-color: var(--main-primary);
+  color: var(--main-white);
+}
+
+.custom-dropdown-option-item-top {
+  border-radius: 8px 8px 0 0;
+}
+
+.custom-dropdown-option-item-bottom {
+  border-radius: 0 0 8px 8px;
+  border-bottom: none;
+}
+
+.custom-dropdown-option-item-not-found {
+  border-radius: 8px;
+  border-bottom: none;
+  color: var(--main-secondary-gray);
+}
+.custom-dropdown-option-item-single {
+  border-radius: 8px;
+  border-bottom: none;
+}
+
+.custom-dropdown-option-item-not-found:hover {
+  background-color: var(--background-white);
+  color: var(--main-secondary-gray);
+}
+
+.custom-dropdown-button {
+  margin-left: 11px;
+}
+
+.custom-dropdown-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 10;
+}
+
+.custom-dropdown-search {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: var(--background-white);
+  color: var(--color-black);
+  caret-color: var(--main-primary);
+  border-right: 1px solid var(--main-stroke);
+}

@@ -1,0 +1,7 @@
+.refresh-button {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  height: 32px;
+  min-width: 56px;
+}

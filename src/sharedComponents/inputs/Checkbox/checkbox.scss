@@ -1,0 +1,80 @@
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0;
+  width: 0;
+
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Inter-Medium';
+    cursor: pointer;
+    position: relative;
+    padding-left: 35px;
+  }
+
+  .checkbox-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkbox-label::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+
+  .checkbox-label:has(.checkbox-input:checked)::before {
+    background-color: #4caf50;
+    border-color: #4caf50;
+  }
+
+  .checkbox-label::after {
+    content: '';
+    position: absolute;
+    left: -2.5px;
+    top: 48%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .checkbox-label:has(.checkbox-input:checked)::after {
+    opacity: 1;
+  }
+
+  .checkbox__light {
+    color: #000;
+  }
+
+  .checkbox__dark {
+    color: #fff;
+  }
+
+  .checkbox__disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  .error__message {
+    color: red;
+    font-size: 0.75rem;
+  }
+}

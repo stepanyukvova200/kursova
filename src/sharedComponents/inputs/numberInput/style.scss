@@ -1,0 +1,50 @@
+.number-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.number-input-decrease,
+.number-input-increase {
+  position: absolute;
+  color: var(--color-black);
+  width: 12px;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.number-input-decrease {
+  bottom: 6px;
+  right: 6px;
+  transform: translateY(25%);
+}
+
+.number-input-increase {
+  top: 2px;
+  right: 6px;
+  transform: translateY(25%);
+}
+
+.number-input-decrease:hover,
+.number-input-increase:hover {
+}
+
+.number-input-decrease:disabled,
+.number-input-increase:disabled {
+  cursor: not-allowed;
+}
+
+.number-input-field {
+  display: flex;
+  width: calc(100% - 20px);
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  -moz-appearance: textfield; /* Firefox */
+  -webkit-appearance: textfield; /* Chrome, Safari, Edge */
+  appearance: textfield; /* Сучасний стандарт */
+}

@@ -1,0 +1,139 @@
+@use '/src/colors' as *;
+
+.dark {
+  .tabs {
+    background-color: $main-gray;
+
+    &.bright {
+      background-color: $secondary-gray;
+    }
+
+    .tab {
+      color: $main-white;
+      background-color: transparent;
+      border-color: transparent;
+
+      .btn-secondary.active:focus {
+        border-color: transparent;
+      }
+
+      &:hover {
+        background-color: #1f6114;
+        border-color: transparent;
+      }
+
+      &.active {
+        background-color: $main-green;
+        border-color: transparent;
+      }
+
+      &:focus {
+        border-color: transparent;
+        box-shadow: unset;
+      }
+    }
+  }
+}
+
+.btn-check:checked + .btn-secondary:focus,
+.btn-check:active + .btn-secondary:focus,
+.btn-secondary:active:focus,
+.btn-secondary.active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  outline: 0;
+  box-shadow: unset;
+}
+
+.tabs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: fit-content;
+  min-width: 100px;
+  min-height: 40px;
+  gap: 7px;
+  padding: 7px;
+  border-radius: 50px;
+  background-color: $main-white;
+
+  &__empty {
+    text-align: center;
+  }
+
+  &.large {
+    gap: 22px;
+  }
+
+  &.bright {
+    background-color: #e9f5e9;
+  }
+
+  @media screen and (max-width: 435px) {
+    gap: 10px;
+    flex-direction: column;
+    padding: 10px 12px;
+    border-radius: 15px;
+  }
+
+  .tab {
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: $main-black;
+    transition: all 0.15s;
+
+    &:hover {
+      color: $main-white;
+      background-color: #1f6114;
+    }
+
+    &.active {
+      color: $main-white;
+      background-color: $main-green;
+      border-color: $main-green;
+    }
+
+    &:focus {
+      border-color: $main-green;
+    }
+
+    &.large {
+      padding: 6px 27px;
+    }
+  }
+
+  .btn-secondary {
+    border-color: transparent;
+    background-color: unset;
+
+    &:hover {
+      background-color: #1f6114;
+      border-color: transparent;
+    }
+
+    &.active {
+      background-color: $main-green;
+      border-color: transparent;
+
+      &:focus {
+        border-color: transparent;
+        box-shadow: unset;
+      }
+    }
+
+    &:focus {
+      border-color: transparent;
+      box-shadow: unset;
+    }
+
+    &:active {
+      background-color: $main-green !important;
+      border-color: transparent !important;
+    }
+  }
+}
+
+.tab__content {
+  height: calc(100% - 45px);
+}

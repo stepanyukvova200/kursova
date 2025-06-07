@@ -1,0 +1,29 @@
+.inner__slider {
+  position: relative;
+  width: 100%;
+}
+
+.swiper__default {
+  width: 100%;
+  position: relative;
+}
+
+.custom__arrow {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &.right {
+    right: 0;
+  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+.swiper-wrapper {
+  align-items: center;
+  // height: 100%;
+}

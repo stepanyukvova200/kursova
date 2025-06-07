@@ -1,0 +1,36 @@
+.MuiPickersSlideTransition-root.MuiDayCalendar-slideTransition {
+  min-height: unset;
+}
+
+.MuiDateCalendar-root {
+  width: unset;
+}
+
+.MuiDayCalendar-header {
+  .MuiTypography-root.MuiTypography-caption.MuiDayCalendar-weekDayLabel {
+    color: var(--color-primary);
+  }
+}
+
+.MuiButtonBase-root.MuiPickersDay-root.MuiPickersDay-dayWithMargin {
+  &.MuiPickersDay-today {
+    border: unset;
+  }
+
+  &.Mui-selected {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border-radius: 4px;
+  }
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd {
+  height: 40px;
+  color: var(--color-secondary-gray);
+  border: 1px solid var(--color-stroke);
+  border-radius: 12px;
+
+  .MuiOutlinedInput-notchedOutline {
+    border: 1px solid var(--color-stroke);
+  }
+}

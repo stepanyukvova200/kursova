@@ -1,0 +1,6 @@
+.wrapper {
+  height: 100%;
+  display: flex;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr auto;
+}

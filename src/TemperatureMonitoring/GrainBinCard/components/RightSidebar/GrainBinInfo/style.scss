@@ -1,0 +1,45 @@
+.silo-info {
+  font-family: 'Inter', sans-serif;
+
+  h3 {
+    color: #328624;
+    margin-bottom: 10px;
+  }
+
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 18px;
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--color-black);
+      font-family: 'Inter-Medium', sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+      .co2 {
+        color: var(--color-error);
+        font-weight: 700;
+      }
+    }
+  }
+
+  .culture-display {
+    display: flex;
+    width: 100%;
+    border: 1px solid var(--color-stroke);
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 14px;
+    color: var(--color-secondary-gray);
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+}

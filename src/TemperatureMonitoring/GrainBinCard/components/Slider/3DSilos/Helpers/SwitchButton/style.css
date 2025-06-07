@@ -1,0 +1,57 @@
+.switch__wrapper {
+  display: flex;
+  flex-direction: row;
+  display: 'flex';
+  align-items: center;
+}
+
+.switch__wrapper:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.switch__button {
+  background-color: var(--secondary-gray);
+}
+
+.switch__button-ball {
+  background-color: var(--main-green);
+}
+
+.switch__button-ball {
+  transform: translateX(21px);
+}
+
+.switch__button {
+  caret-color: transparent;
+  border-radius: 16px;
+  border: 1px solid #fefffe;
+  width: 40px;
+  height: 20px;
+  background-color: #e9f1f5;
+  cursor: pointer;
+  margin-right: 20px;
+
+  position: relative;
+}
+
+.switch__button-ball {
+  caret-color: transparent;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #57bc46;
+
+  position: absolute;
+  top: 1.5px;
+  transition: 0.3s all ease;
+}
+
+.switch__title {
+  color: white;
+  font-size: 14px;
+  line-height: 15.73px;
+}
+
+.handle-on {
+  transform: translateX(2px);
+}

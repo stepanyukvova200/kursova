@@ -1,0 +1,128 @@
+$btn-info: #6ce0c3;
+$btn-info-hover: #28bd98;
+$btn-primary: #7ece7e;
+$btn-primary-hover: #46b946;
+$btn-danger: #ff6c51;
+$btn-danger-hover: #ff5233;
+
+$gray-50: #fbf0f2;
+$gray-100: #dcd8d9;
+$gray-200: #bfbfbf;
+$gray-300: #a6a6a6;
+$gray-400: #8c8c8c;
+$gray-500: #737373;
+$gray-600: #595959;
+$gray-700: #404040;
+$gray-800: #282626;
+$gray-900: #150a0d;
+
+$green-50: #f3ffdf;
+$green-100: #dffeb2;
+$green-200: #ccfd81;
+$green-300: #b7fc4f;
+$green-400: #a5d65c;
+$green-500: #7ac903;
+$green-600: #6bb003;
+$green-700: #5b9602;
+$green-800: #2d4b00;
+$green-900: #0c1a00;
+
+$main-green: #328624;
+$green-hover: #276b1c;
+$main-gray: #2a2c38;
+$secondary-gray: #353745;
+$main-black-bg: #21232d;
+$main-light-gray: #e9f1f5;
+$main-white: #fefffe;
+$main-black: #000000;
+
+:root {
+  --main-white: #fefffe;
+  --main-black: #0d0d0d;
+  --main-primary: #328624;
+  --main-secondary: #276b1c;
+  --main-stroke: #dadada;
+  --main-secondary-gray: #979797;
+
+  --color-black: #0d0d0d;
+  --color-gray: #464646;
+  --color-secondary-gray: #979797;
+  --color-stroke: #dadada;
+  --color-bg-light: #e9f1f5;
+  --color-white: #fefffe;
+  --color-primary: #328624;
+  --color-secondary: #276b1c;
+  --color-secondary-button: #328624;
+  --color-secondary-button-hover: #276b1c;
+  --color-error: #ff3333;
+  --color-warning: #ffbe18;
+  --color-table-header: #e6f0e4;
+  --color-table-column: #e9f1f5;
+  --color-text-gray: #737373;
+
+  --background-white: #fefffe;
+  --background-light: #e9f1f5;
+
+  --switch-ball-default: #328624;
+  --switch-bg-default: #fefffe;
+  --switch-bg-light: #e9f1f5;
+
+  --slider-default: #fefffe;
+
+  --tooltip-date: #464646;
+  --tooltip-title: #0d0d0d;
+  --tooltip-description: #464646;
+
+  --tooltip-shadow: rgba(0, 0, 0, 0.05);
+
+  --dropdown-option: #328624;
+
+  --date-picker-hover: #e6f0e4;
+  --date-picker-chevron: #464646;
+  --date-picker-time-item: #328624;
+
+  --search-icon: #979797;
+  --search-input: #464646;
+}
+
+// dark mode
+body.dark {
+  --color-black: #fefefe;
+  --color-gray: #d1d1d1;
+  --color-secondary-gray: #b3b3b3;
+  --color-stroke: #999999;
+  --color-bg-light: #1f1f1f;
+  --color-white: #0d0d0d;
+  --color-primary: #275b17;
+  --color-secondary-button: #fefffe;
+  --color-secondary-button-hover: #dadada;
+  --color-secondary: #1f4b14;
+  --color-error: #ff6666;
+  --color-warning: #ffcc66;
+  --color-table-header: #4d4f5a;
+  --color-table-column: #a9aaaf;
+  --color-text-gray: #DADADA;
+
+  --background-white: #2a2c38;
+  --background-light: #4d4f5a;
+
+  --switch-ball-default: #fefffe;
+  --switch-bg-default: #22242f;
+  --switch-bg-light: #22242f;
+
+  --slider-default: #dadada;
+
+  --tooltip-date: #dadada;
+  --tooltip-title: #fefffe;
+  --tooltip-description: #dadada;
+
+  --tooltip-shadow: rgba(99, 99, 99, 0.05);
+
+  --dropdown-option: #fefffe;
+
+  --date-picker-chevron: #dadada;
+  --date-picker-time-item: #fefffe;
+
+  --search-icon: #DADADA;
+  --search-input: #FEFFFE;
+}

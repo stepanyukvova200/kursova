@@ -1,0 +1,12 @@
+@use '/src/colors' as *;
+
+.loaderWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .spinner-border {
+    border-color: $main-green;
+    border-right-color: transparent;
+  }
+}
